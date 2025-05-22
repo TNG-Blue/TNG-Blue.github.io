@@ -1,19 +1,399 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Go API Demo</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PrintHub3D - Dịch Vụ In 3D Chuyên Nghiệp</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+<!-- Header -->
+<header class="header">
   <div class="container">
-    <h1>🌀 Go API Demo</h1>
-    <p>Nhấn nút bên dưới để gọi dữ liệu từ backend viết bằng Golang.</p>
-    <button id="fetchBtn">Gọi API</button>
-    <div id="output" class="output">Chưa có dữ liệu</div>
+    <div class="nav">
+      <div class="logo">
+        <i class="fas fa-cube"></i>
+        <span>PrintHub3D</span>
+      </div>
+      <nav class="nav-menu">
+        <a href="#home" class="nav-link active">Trang chủ</a>
+        <a href="#services" class="nav-link">Dịch vụ</a>
+        <a href="#upload" class="nav-link">Tải file</a>
+        <a href="#contact" class="nav-link">Liên hệ</a>
+      </nav>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
   </div>
+</header>
 
-  <script src="script.js"></script>
+<!-- Hero Section -->
+<section id="home" class="hero">
+  <div class="hero-background">
+    <div class="geometric-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="hero-content">
+      <h1 class="hero-title">
+        Dịch Vụ In 3D
+        <span class="highlight">Chuyên Nghiệp</span>
+      </h1>
+      <p class="hero-description">
+        Biến ý tưởng của bạn thành hiện thực với công nghệ in 3D tiên tiến.
+        Chất lượng cao, giao hàng nhanh, giá cả cạnh tranh.
+      </p>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number">500+</span>
+          <span class="stat-label">Dự án hoàn thành</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">24/7</span>
+          <span class="stat-label">Hỗ trợ kỹ thuật</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">99%</span>
+          <span class="stat-label">Khách hàng hài lòng</span>
+        </div>
+      </div>
+      <div class="hero-buttons">
+        <a href="#upload" class="btn btn-primary">
+          <i class="fas fa-upload"></i>
+          Tải file ngay
+        </a>
+        <a href="#services" class="btn btn-secondary">
+          <i class="fas fa-info-circle"></i>
+          Tìm hiểu thêm
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="services">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Dịch Vụ Của Chúng Tôi</h2>
+      <p class="section-description">
+        Cung cấp giải pháp in 3D toàn diện cho mọi nhu cầu
+      </p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="fas fa-cube"></i>
+        </div>
+        <h3 class="service-title">In 3D Prototype</h3>
+        <p class="service-description">
+          Tạo mẫu thử nghiệm nhanh chóng với độ chính xác cao
+        </p>
+        <ul class="service-features">
+          <li>Độ phân giải cao</li>
+          <li>Nhiều loại vật liệu</li>
+          <li>Giao hàng trong 24h</li>
+        </ul>
+      </div>
+      <div class="service-card featured">
+        <div class="service-badge">Phổ biến</div>
+        <div class="service-icon">
+          <i class="fas fa-industry"></i>
+        </div>
+        <h3 class="service-title">Sản Xuất Hàng Loạt</h3>
+        <p class="service-description">
+          Sản xuất số lượng lớn với chất lượng đồng nhất
+        </p>
+        <ul class="service-features">
+          <li>Quy trình tự động</li>
+          <li>Kiểm soát chất lượng</li>
+          <li>Giá cả cạnh tranh</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="fas fa-tools"></i>
+        </div>
+        <h3 class="service-title">Tư Vấn Thiết Kế</h3>
+        <p class="service-description">
+          Hỗ trợ tối ưu hóa thiết kế cho in 3D
+        </p>
+        <ul class="service-features">
+          <li>Phân tích kỹ thuật</li>
+          <li>Tối ưu chi phí</li>
+          <li>Hỗ trợ 24/7</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Upload Section -->
+<section id="upload" class="upload-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Tải File 3D</h2>
+      <p class="section-description">
+        Hỗ trợ các định dạng: STL, OBJ, PLY, 3MF (Tối đa 50MB)
+      </p>
+    </div>
+
+    <div class="upload-container">
+      <div class="upload-area" id="uploadArea">
+        <div class="upload-content">
+          <div class="upload-icon">
+            <i class="fas fa-cloud-upload-alt"></i>
+          </div>
+          <h3 class="upload-title">Kéo thả file vào đây</h3>
+          <p class="upload-description">hoặc</p>
+          <button class="btn btn-primary" id="selectFileBtn">
+            <i class="fas fa-folder-open"></i>
+            Chọn file từ máy tính
+          </button>
+          <input type="file" id="fileInput" accept=".stl,.obj,.ply,.3mf" hidden>
+        </div>
+      </div>
+
+      <div class="file-preview" id="filePreview" style="display: none;">
+        <div class="file-info">
+          <div class="file-icon">
+            <i class="fas fa-file-alt"></i>
+          </div>
+          <div class="file-details">
+            <h4 class="file-name" id="fileName"></h4>
+            <p class="file-size" id="fileSize"></p>
+            <div class="upload-progress">
+              <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+              </div>
+              <span class="progress-text" id="progressText">0%</span>
+            </div>
+          </div>
+          <button class="btn-remove" id="removeFileBtn">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="upload-options">
+        <div class="option-group">
+          <label class="option-label">Chất liệu:</label>
+          <select class="option-select" id="materialSelect">
+            <option value="pla">PLA - Nhựa sinh học</option>
+            <option value="abs">ABS - Nhựa cứng</option>
+            <option value="petg">PETG - Trong suốt</option>
+            <option value="tpu">TPU - Nhựa dẻo</option>
+            <option value="resin">Resin - Độ phân giải cao</option>
+          </select>
+        </div>
+
+        <div class="option-group">
+          <label class="option-label">Màu sắc:</label>
+          <div class="color-options">
+            <label class="color-option">
+              <input type="radio" name="color" value="white" checked>
+              <span class="color-circle white"></span>
+              <span>Trắng</span>
+            </label>
+            <label class="color-option">
+              <input type="radio" name="color" value="black">
+              <span class="color-circle black"></span>
+              <span>Đen</span>
+            </label>
+            <label class="color-option">
+              <input type="radio" name="color" value="red">
+              <span class="color-circle red"></span>
+              <span>Đỏ</span>
+            </label>
+            <label class="color-option">
+              <input type="radio" name="color" value="blue">
+              <span class="color-circle blue"></span>
+              <span>Xanh</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="option-group">
+          <label class="option-label">Chất lượng in:</label>
+          <div class="quality-options">
+            <label class="quality-option">
+              <input type="radio" name="quality" value="draft">
+              <span class="quality-info">
+                                    <strong>Nháp (0.3mm)</strong>
+                                    <small>Nhanh - Tiết kiệm</small>
+                                </span>
+            </label>
+            <label class="quality-option">
+              <input type="radio" name="quality" value="standard" checked>
+              <span class="quality-info">
+                                    <strong>Tiêu chuẩn (0.2mm)</strong>
+                                    <small>Cân bằng - Khuyến nghị</small>
+                                </span>
+            </label>
+            <label class="quality-option">
+              <input type="radio" name="quality" value="high">
+              <span class="quality-info">
+                                    <strong>Cao (0.1mm)</strong>
+                                    <small>Chi tiết - Premium</small>
+                                </span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="price-estimate" id="priceEstimate" style="display: none;">
+        <div class="estimate-content">
+          <h4 class="estimate-title">Ước Tính Chi Phí</h4>
+          <div class="estimate-details">
+            <div class="estimate-row">
+              <span>Thời gian in:</span>
+              <span id="printTime">~4 giờ</span>
+            </div>
+            <div class="estimate-row">
+              <span>Vật liệu sử dụng:</span>
+              <span id="materialUsage">~50g</span>
+            </div>
+            <div class="estimate-row total">
+              <span>Tổng chi phí:</span>
+              <span id="totalCost">250,000 VNĐ</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="upload-actions">
+        <button class="btn btn-primary btn-large" id="uploadBtn" disabled>
+          <i class="fas fa-paper-plane"></i>
+          Gửi Yêu Cầu In
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+  <div class="container">
+    <div class="contact-content">
+      <div class="contact-info">
+        <h2 class="section-title">Liên Hệ Với Chúng Tôi</h2>
+        <p class="section-description">
+          Có câu hỏi về dự án? Chúng tôi luôn sẵn sàng hỗ trợ
+        </p>
+        <div class="contact-items">
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h4>Điện thoại</h4>
+              <p>+84 123 456 789</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <p>info@printhub3d.vn</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>Địa chỉ</h4>
+              <p>123 Đường ABC, Quận 1, TP.HCM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <form id="contactForm">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Họ và tên" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Email" required>
+          </div>
+          <div class="form-group">
+            <input type="tel" id="phone" placeholder="Số điện thoại">
+          </div>
+          <div class="form-group">
+            <textarea id="message" placeholder="Nội dung tin nhắn" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-large">
+            <i class="fas fa-paper-plane"></i>
+            Gửi tin nhắn
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <div class="logo">
+          <i class="fas fa-cube"></i>
+          <span>PrintHub3D</span>
+        </div>
+        <p>Dịch vụ in 3D chuyên nghiệp, mang đến giải pháp tối ưu cho mọi nhu cầu sản xuất.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4>Dịch vụ</h4>
+        <ul>
+          <li><a href="#">In 3D Prototype</a></li>
+          <li><a href="#">Sản xuất hàng loạt</a></li>
+          <li><a href="#">Tư vấn thiết kế</a></li>
+          <li><a href="#">Hậu xử lý</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Hỗ trợ</h4>
+        <ul>
+          <li><a href="#">Hướng dẫn sử dụng</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Liên hệ</a></li>
+          <li><a href="#">Chính sách bảo hành</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Liên hệ</h4>
+        <div class="contact-info">
+          <p><i class="fas fa-phone"></i> +84 123 456 789</p>
+          <p><i class="fas fa-envelope"></i> info@printhub3d.vn</p>
+          <p><i class="fas fa-map-marker-alt"></i> 123 Đường ABC, Q1, HCM</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 PrintHub3D. Tất cả quyền được bảo lưu.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Notification -->
+<div class="notification" id="notification">
+  <div class="notification-content">
+    <i class="notification-icon"></i>
+    <span class="notification-message"></span>
+  </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
